@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'Emeko.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'storefront',
+        'NAME': 'meko',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
@@ -129,8 +129,12 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'static')    
 ]
+
+MEDIA_URL = '/images/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 
 # Default primary key field type
@@ -139,3 +143,20 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # https://www.youtube.com/watch?v=YL_QRZP0cDc
 # playlist
+
+MPESA_ENVIRONMENT = 'sandbox'
+
+MPESA_CONSUMER_KEY = 'hg2GWeg83LVGb9dlzXMGEEEcDCAqzTfr'
+MPESA_CONSUMER_SECRET = 'FubIWAfCAFqGoVrY'
+
+
+#MPESA_SHORTCODE = ''
+
+
+
+
+
+
+
+
+
